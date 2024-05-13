@@ -7,21 +7,22 @@ Create a new group.
 Authorization : "token_user123"
 ##### Request Body:
 
+* description is optional
 ```json
 {
-		name : "grup baru",
-		description : "cool group" //(optional)
+		"name" : "grup baru",
+		"description" : "cool group" 
 }
 ```
 ##### Response Body : Success
 
 ```json
 {
-	data : {
-		id : 2,
-		name : "grup baru",
-		description : "cool group",
-		created_at : "2024-05-11T19:15:42.002Z",
+	"data" : {
+		"id" : 2,
+		"name" : "grup baru",
+		"description" : "cool group",
+		"created_at" : "2024-05-11T19:15:42.002Z",
 	}
 }
 
@@ -30,7 +31,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 	
 }
 
@@ -46,31 +47,31 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : 
+	"data" : 
 		[
-	        {
-	            "username": "ary",
-	            "group_id": 1,
-	            "role": "ADMIN",
-	            "group": {
-	                "id": 1,
-	                "name": "first group",
-	                "created_at": "2024-05-11T19:13:26.456Z",
-	                "description": "first group description"
-	        }
-	        },
-	        {
-	            "username": "ary",
-	            "group_id": 2,
-	            "role": "MEMBER",
-	            "group": {
-	                "id": 2,
-	                "name": "second group",
-	                "created_at": "2024-07-11T15:14:23.532Z",
-	                "description": "second group description"
-		        }
-	        }
-	    ]
+	        {
+	            "username": "ary",
+	            "group_id": 1,
+	            "role": "ADMIN",
+	            "group": {
+	                "id": 1,
+	                "name": "first group",
+	                "created_at": "2024-05-11T19:13:26.456Z",
+	                "description": "first group description"
+	        }
+	        },
+	        {
+	            "username": "ary",
+	            "group_id": 2,
+	            "role": "MEMBER",
+	            "group": {
+	                "id": 2,
+	                "name": "second group",
+	                "created_at": "2024-07-11T15:14:23.532Z",
+	                "description": "second group description"
+		        }
+	        }
+	    ]
 }
 
 ```
@@ -78,7 +79,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 	
 }
 
@@ -94,11 +95,11 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		id : 1,
-		name : "group name",
+	"data" : {
+		"id" : 1,
+		"name" : "group name",
 		"created_at": "2024-05-11T19:15:42.002Z",
-		description : "group description"
+		"description" : "group description"
 	}
 	
 }
@@ -108,7 +109,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 	
 }
 
@@ -125,9 +126,9 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		name : "new name",
-		description : "new group description"
+	"data" : {
+		"name" : "new name",
+		"description" : "new group description"
 	}
 	
 }
@@ -136,10 +137,10 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		id : 1,
-		name : "new name",
-		description : "new group description"
+	"data" : {
+		"id" : 1,
+		"name" : "new name",
+		"description" : "new group description"
 	}
 	
 }
@@ -148,7 +149,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 	
 }
 ```
@@ -165,8 +166,8 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		username : "ary"
+	"data" : {
+		"username" : "ary"
 	}
 }
 ```
@@ -174,9 +175,9 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		username : "ary",
-		role : "MEMBER"
+	"data" : {
+		"username" : "ary",
+		"role" : "MEMBER"
 	}
 	
 }
@@ -185,7 +186,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 	
 }
 ```
@@ -202,8 +203,8 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : {
-		username : "name"
+	"data" : {
+		"username" : "name"
 	}
 }
 ```
@@ -211,7 +212,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	data : "OK"
+	"data" : "OK"
 	
 }
 ```
@@ -219,7 +220,7 @@ Authorization : "token_user123"
 
 ```json
 {
-	errors : "Unauthorized"
+	"errors" : "Unauthorized"
 	
 }
 ```
