@@ -19,9 +19,9 @@ This entity-relational diagram shows the tables and relationships for user, grou
 
 Detailed documentation for each API endpoint category is available at the following links:
 
-- [User Management](https://github.com/Arundaon/groupchat-manager-API/docs/user-management.md)
-- [Group Management](https://github.com/Arundaon/groupchat-manager-API/docs/group-management.md)
-- [Message Management](https://github.com/Arundaon/groupchat-manager-API/docs/message-management.md)
+- [User Management](https://github.com/Arundaon/groupchat-manager-API/blob/master/docs/user-management.md)
+- [Group Management](https://github.com/Arundaon/groupchat-manager-API/blob/master/docs/group-management.md)
+- [Message Management](https://github.com/Arundaon/groupchat-manager-API/blob/master/docs/message-management.md)
 
 ## Installation
 
