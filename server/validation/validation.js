@@ -1,0 +1,12 @@
+import Joi from "joi";
+import { ResponseError } from "../error/response-error.js";
+export const validate = (schema, request) => {
+    const result = schema.validate(request, {
+        abortEarly: false, // show all error
+        allowUnknown: false, // deny unknown field
+    });
+    if (result.error) {
+        throw new ResponseError(400, result.error.message);
+    }
+    return result.value;
+};
