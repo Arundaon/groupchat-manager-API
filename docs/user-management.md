@@ -5,27 +5,27 @@ Register a new user.
 **POST** localhost/api/users/register
 ##### Request Body:
 
-```
+```json
 {
-		username : "ary",
-		password : "mypass123"
+		"username" : "ary",
+		"password" : "mypass123"
 }
 ```
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
-		username : "ary",
+	"data" : {
+		"username" : "ary",
 	}
 }
 
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "username already exist
+	"errors" : "username already exist"
 }
 
 ```
@@ -36,27 +36,27 @@ Login to an existing account.
 **POST** localhost/api/users/login
 ##### Request Body:
 
-```
+```json
 {
-		username : "ary",
-		password : "mypass123"
+		"username" : "ary",
+		"password" : "mypass123"
 }
 ```
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
-		token : "mytoken123"
+	"data" : {
+		"token" : "mytoken123"
 	}
 }
 
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "username or password is wrong"
+	"errors" : "username or password is wrong"
 }
 
 ```
@@ -69,11 +69,11 @@ Get a user information.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
-		username : "ary",
-		bio : "😁😁😁"
+	"data" : {
+		"username" : "ary",
+		"bio" : "😁😁😁"
 	}
 	
 }
@@ -81,9 +81,9 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 }
 
 ```
@@ -95,29 +95,30 @@ Update user information.
 ###### Header
 Authorization : "token_user123"
 ##### Request Body:
-
-```
+- bio is optional
+- password is optional
+```json
 {
-		bio : "updated", // optional
-		password : "newpass" // optional
+		"bio" : "updated", 
+		"password" : "newpass" 
 }
 ```
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
-		username: "ary",
-		bio : "updated"
+	"data" : {
+		"username" : "ary",
+		"bio" : "updated"
 	}
 }
 
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 }
 
 ```
@@ -130,17 +131,17 @@ Log out from the app.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```
+```json
 {
-	data : "OK"
+	"data" : "OK"
 }
 
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "Unauthorized"
+	"errors" : "Unauthorized"
 }
 
 ```
