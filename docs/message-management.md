@@ -7,7 +7,7 @@ Get all messages that has been sent in a group, must be a member in the group.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		[
@@ -31,7 +31,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "unauthorized"
 }
@@ -47,7 +47,7 @@ Must be a member of the group.
 Authorization : "token_user123"
 ##### Request Body
 
-```json
+```
 {
 	data : {
 		body : "hello world!"
@@ -58,7 +58,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		id : 1,
@@ -72,7 +72,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "Unauthorized"
 }
@@ -93,7 +93,7 @@ Must be a member in the group and must be user's own message.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```json
+```
 {
 	data : "OK"
 	
@@ -102,7 +102,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "Unauthorized"
 }
