@@ -5,7 +5,7 @@ Register a new user.
 **POST** localhost/api/users/register
 ##### Request Body:
 
-```json
+```
 {
 		username : "ary",
 		password : "mypass123"
@@ -13,7 +13,7 @@ Register a new user.
 ```
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		username : "ary",
@@ -23,7 +23,7 @@ Register a new user.
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "username already exist
 }
@@ -36,7 +36,7 @@ Login to an existing account.
 **POST** localhost/api/users/login
 ##### Request Body:
 
-```json
+```
 {
 		username : "ary",
 		password : "mypass123"
@@ -44,7 +44,7 @@ Login to an existing account.
 ```
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		token : "mytoken123"
@@ -54,7 +54,7 @@ Login to an existing account.
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "username or password is wrong"
 }
@@ -69,7 +69,7 @@ Get a user information.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		username : "ary",
@@ -81,7 +81,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "unauthorized"
 }
@@ -96,7 +96,7 @@ Update user information.
 Authorization : "token_user123"
 ##### Request Body:
 
-```json
+```
 {
 		bio : "updated", // optional
 		password : "newpass" // optional
@@ -104,7 +104,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Success
 
-```json
+```
 {
 	data : {
 		username: "ary",
@@ -115,7 +115,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "unauthorized"
 }
@@ -130,7 +130,7 @@ Log out from the app.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```json
+```
 {
 	data : "OK"
 }
@@ -138,7 +138,7 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```json
+```
 {
 	errors : "Unauthorized"
 }
