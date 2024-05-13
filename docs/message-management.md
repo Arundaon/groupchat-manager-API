@@ -7,21 +7,21 @@ Get all messages that has been sent in a group, must be a member in the group.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
+	"data" : {
 		[
 			{
-				id : 1,
-				body : "hello world",
-				created_at : "2024-05-12T04:51:32.822Z",
-				username : "ary"
+				"id" : 1,
+				"body" : "hello world",
+				"created_at" : "2024-05-12T04:51:32.822Z",
+				"username" : "ary"
 			},
 			{
-				id : 2,
-				body : "hey",
-				created_at : "2024-05-12T04:51:32.822Z",
-				username : "doe"
+				"id" : 2,
+				"body" : "hey",
+				"created_at" : "2024-05-12T04:51:32.822Z",
+				"username" : "doe"
 			},
 		]
 	}
@@ -31,9 +31,9 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "unauthorized"
+	"errors" : "unauthorized"
 }
 
 ```
@@ -47,10 +47,10 @@ Must be a member of the group.
 Authorization : "token_user123"
 ##### Request Body
 
-```
+```json
 {
-	data : {
-		body : "hello world!"
+	"data" : {
+		"body" : "hello world!"
 	}
 	
 }
@@ -58,13 +58,13 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Success
 
-```
+```json
 {
-	data : {
-		id : 1,
-		body : "hello world!",
-		created_at : "2024-05-12T04:51:32.822Z",
-		username : "ary"
+	"data" : {
+		"id" : 1,
+		"body" : "hello world!",
+		"created_at" : "2024-05-12T04:51:32.822Z",
+		"username" : "ary"
 	}
 	
 }
@@ -72,9 +72,9 @@ Authorization : "token_user123"
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "Unauthorized"
+	"errors" : "Unauthorized"
 }
 
 ```
@@ -93,18 +93,18 @@ Must be a member in the group and must be user's own message.
 Authorization : "token_user123"
 ##### Response Body : Success
 
-```
+```json
 {
-	data : "OK"
+	"data" : "OK"
 	
 }
 
 ```
 ##### Response Body : Failed
 
-```
+```json
 {
-	errors : "Unauthorized"
+	"errors" : "Unauthorized"
 }
 
 ```
